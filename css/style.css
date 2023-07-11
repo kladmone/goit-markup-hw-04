@@ -1,7 +1,7 @@
 /* Main-Page */
 :root {
   --primary-font: "Roboto", sans-serif;
-  ---color: #4d5ae5;
+  --color-iris: #4d5ae5;
   --logo-font: "Raleway", sans-serif;
   --logo-font-weight: 800;
   --logo-font-size: 18px;
@@ -157,9 +157,18 @@ body {
 /* First-Secion */
 
 .hero {
-  padding-bottom: 120px;
   background-color: var(--navy-blue);
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero-bg.jpg);
+  max-width: 1440px;
   padding: 188px 0;
+  padding-bottom: 120px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .hero-title {
   font-size: 56px;
@@ -205,6 +214,18 @@ body {
 
 .benefits-item {
   width: calc((100% - 72px) / 4);
+}
+
+.benefits-block {
+  width: 264px;
+  height: 112px;
+  border-radius: 4px;
+  background: var(--cloud, #f4f4fd);
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 
 .benefits-list {
@@ -283,6 +304,27 @@ body {
   padding: 32px 16px 32px;
 }
 
+.people-social-icons {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  background-color: var(--color-iris);
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.people-social-icons:hover {
+  background-color: var(--ocean);
+}
+
+.socials {
+  display: flex;
+  gap: 24px;
+  margin-top: 8px;
+}
+
 .jobs {
   font-size: 16px;
   line-height: 1.5;
@@ -298,7 +340,42 @@ body {
   background-color: var(--true-white-color);
   width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
+
+/* Customers */
+
+.customers-title {
+  color: var(--navyblue, #2e2f42);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
+}
+
+.customers-list {
+  display: flex;
+  gap: 24px;
+}
+
+.customers-item {
+  width: 168px;
+  height: 88px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid var(--lightslate, #8e8f99);
+}
+
+.customers-item:hover {
+  color: var(--ocean);
+}
+
 /* Footer */
 
 .logo-footer {
