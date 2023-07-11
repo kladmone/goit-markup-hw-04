@@ -71,6 +71,8 @@ body {
 
 .header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .logo {
@@ -169,6 +171,7 @@ body {
   margin: 0 auto;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 .hero-title {
   font-size: 56px;
@@ -188,6 +191,7 @@ body {
   min-width: 169px;
   height: 56px;
   border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .order-button-text {
@@ -301,13 +305,13 @@ body {
 }
 
 .people-info {
-  padding: 32px 16px 32px;
+  padding: 32px 0;
 }
 
 .people-social-icons {
-  width: 40px;
-  height: 40px;
-  border-radius: 50px;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
   background-color: var(--color-iris);
   display: flex;
   align-content: center;
@@ -315,7 +319,8 @@ body {
   align-items: center;
 }
 
-.people-social-icons:hover {
+.people-social-icons:hover,
+.people-social-icons:focus {
   background-color: var(--ocean);
 }
 
@@ -323,6 +328,7 @@ body {
   display: flex;
   gap: 24px;
   margin-top: 8px;
+  justify-content: center;
 }
 
 .jobs {
