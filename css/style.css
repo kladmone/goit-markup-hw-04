@@ -100,7 +100,6 @@ body {
   bottom: -1px;
   height: 4px;
   background-color: #404bbf;
-  color: #404bbf;
   border-radius: 2px;
 }
 
@@ -129,6 +128,7 @@ body {
 
 .header-menu-item {
   display: flex;
+  color: #404bbf;
 }
 
 .header-container {
