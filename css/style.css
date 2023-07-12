@@ -96,7 +96,6 @@ body {
 .current::after {
   content: "";
   position: absolute;
-  color: #404bbf;
   left: 0;
   bottom: -1px;
   height: 4px;
